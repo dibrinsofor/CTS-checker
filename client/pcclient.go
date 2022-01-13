@@ -10,8 +10,7 @@ import (
 )
 
 func FetchPrice(fiat string, token string) (string, error) {
-	// URL := "https://api.nomics.com/v1/currencies/ticker?key=3990ec554a414b59dd85d29b2286dd85&interval=1d&ids=" + fiat + "&convert=" + token
-	URL := "https://api.nomics.com/v1/currencies/ticker?key=3990ec554a414b59dd85d29b2286dd85&interval=1d&ids=NGN&convert=NGNT"
+	// URL := "https://api.nomics.com/v1/currencies/ticker?key= find a free price API" + fiat + "&convert=" + token
 
 	response, err := http.Get(URL)
 	if err != nil {
