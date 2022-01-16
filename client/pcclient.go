@@ -9,8 +9,9 @@ import (
 	"price_checker/model"
 )
 
+// put key manually in url or replace url
 func FetchPrice(fiat string, token string) (string, error) {
-	// URL := "https://api.nomics.com/v1/currencies/ticker?key= find a free price API" + fiat + "&convert=" + token
+	URL := "https://api.nomics.com/v1/currencies/ticker?key= find a free price API" + fiat + "&convert=" + token
 
 	response, err := http.Get(URL)
 	if err != nil {
